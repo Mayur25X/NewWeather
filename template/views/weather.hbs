@@ -1,0 +1,60 @@
+{{>header}}
+{{>navbar}}
+
+<!--============================
+=            Banner            =
+=============================-->
+<form action="/weather" method=""></form>
+<div class="register">
+  <div class="field">
+    <input id="register" maxlength="21" type="text" /><label for="register"><span> City Name </span></label>
+    <button src>OK</button>
+  </div>
+</div>
+
+
+
+<div class="padding">
+        <div class="col-lg-6">
+            <div class="card"> <img class="" src="/Thapa/3_project_Wheater2/a9sHoeY.jpg" alt="Card image cap">
+                <div class="card-img-overlay" style="height:110px;">
+                    <h3 class="card-title text-white m-b-0 dl">{%city%}</h3> <small
+                        class="card-text text-white font-light" id="Date">Sunday 15 march</small>
+                </div>
+                <div class="card-body weather-small">
+                    <div class="row">
+                        <div class="col-8 b-r align-self-center">
+                            <div class="d-flex">
+                                <div class="display-6 text-info"><i class="mdi mdi-weather-pouring"></i></div>
+                                <div class="m-l-20">
+                                    <h1 class="font-light text-info m-b-0">{%temp%}<sup>0</sup></h1> <small>{%main%}                                        day</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h1 class="font-light m-b-0">{%minTemp%}<sup>0</sup></h1> <small>Tonight</small>
+                        </div>
+                        
+                        <div class="d-flex align-items-center" id="space">
+                            <div class="flex-grow-1" style="font-size: 1rem;">
+                              <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {%wind_speed%} km/h
+                                </span></div>
+                              <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {%humidity%}% </span>
+                              </div>
+                              <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {%pressure%} </span>
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--====  End of Banner  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+{{>footer}}
